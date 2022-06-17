@@ -1,0 +1,36 @@
+#conch-banner{
+    background-color: #085a73;
+    color: white;
+    
+
+}
+
+#conch-banner img{
+    width: 100%;
+    height: 65vh;
+    object-fit: contain;
+}
+
+#detail{
+    padding-top: 5rem;;
+    padding-bottom: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+#detail h1{
+    padding-bottom: 1rem;
+}
+
+#pic{
+    padding-right: 0;
+}
+
+#opt{
+    padding-top: 1rem;
+}
+@media screen and (max-device-width: 500px){
+    #conch-banner img{
+        display: none;
+    }
+  }

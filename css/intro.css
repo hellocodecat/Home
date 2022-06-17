@@ -1,0 +1,46 @@
+.banner{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.banner img{
+    max-height: 400px;
+}
+
+.banner h1{
+    padding-bottom: 1rem;
+}
+
+#banner1 h1{
+    color: #fff;
+}
+
+#banner1 img{
+    border-radius: 20px;
+}
+
+#banner1{
+    background-color: #ffc562;
+}
+
+#banner2{
+    background-color: #bd94b4;
+}
+#banner4 h1{
+    color: black;
+}
+
+#banner3{
+    background-color: #d5b44a;
+    color: white;
+}
+
+#banner4{
+    background-color: #de4a5a;
+    color: white;
+}
+
+#banner5{
+    background-color: #ac52ac;
+    color: white;
+}
