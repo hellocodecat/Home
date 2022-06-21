@@ -133,9 +133,9 @@ function showData(date, articles) {
     articles.forEach(article => {
         let starId = guid();
 
-        if (!location.href.includes("127.0.0.1")) {
-            article.cover = `https://cdn.jsdelivr.net/gh/conchbrainclub/home@${commitId}${article.cover}`;
-        }
+        // if (!location.href.includes("127.0.0.1")) {
+        //     article.cover = `https://cdn.jsdelivr.net/gh/conchbrainclub/home@${commitId}${article.cover}`;
+        // }
 
         let html = `
             <div class="col-md-6 animate__animated animate__bounceIn">
