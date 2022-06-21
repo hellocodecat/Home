@@ -201,3 +201,13 @@ async function init() {
     //推送到百度
     // pushToBaidu();
 }
+
+var _hmt = _hmt || [];
+(function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?8aceae23c0eeaad82fe1dcbb635c2041";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+
+
