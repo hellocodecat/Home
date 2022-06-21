@@ -40,7 +40,7 @@ function showTimeline() {
 }
 
 function showLangs() {
-    tags = ["frida", "python", "java", "安卓", "Web逆向", "Objection"]
+    tags = ["项目", "书籍", "文章"]
     tags.forEach(lang => {
         let html = `<li class="nav-item animate__animated animate__flip"><a class="nav-link" onclick="filterByLang('${lang}')">${lang}</a></li>`;
         document.querySelector("#langs").innerHTML += html;
@@ -57,9 +57,9 @@ async function filterByLang(lang) {
     for (let i = 0; i < pages.length; i++) {
         let res = await fetch("/articles/pages/" + pages[i].name);
         let projects = await res.json();
-
+        console.log(res);
         filter(projects, (project) => {
-            return project.language == lang;
+            return project.tag == lang;
         }).forEach(project => {
             results.push(project);
         });
@@ -94,7 +94,11 @@ function loadData() {
 function showInfo(date) {
     let html = `
         <div class="col-md-12">
-            <h1 class="display-4 m-3">${date}</h1>
+            <h1 class="display-4 m-3">${date}
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+            <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
+            </svg></h1>
+            </h1>
         </div>
     `;
 
@@ -144,7 +148,9 @@ function showData(date, articles) {
                             <a href="${article.link}" target="_blank">${article.title}</a>
                             <div id="${starId}" class="float-right star">${showStar(article, starId)}</div>
                         </h5>
-                        <p class="card-text">${article.desc}</p>
+                        <p class="card-text">${article.desc}
+                        <span id="tag" class="float-right alert alert-info">${article.tag}</span>
+                        </p>
                         <p class="card-text">标签：${article.language}</p>
                     </div>
                 </div>

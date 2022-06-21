@@ -1,9 +1,82 @@
 [
     {
+        "title":"DEXDump",
+        "cover": "http://cos.mineseb.cn/markdown/20220621172744.png",
+        "desc":"已经用纯frida实现了，frida版本的会去遍历所有的类，并且加载，对于抽类的，能够修复那种执行的时候把代码填充回dex的",
+        "link":"https://github.com/smartdone/dexdump",
+        "language":"c++",
+        "tag": "项目"
+    },
+    {
+        "title":"BlackDex",
+        "cover": "http://cos.mineseb.cn/markdown/20220621173158.png",
+        "desc":"BlackDex是一个运行在Android手机上的脱壳工具，支持5.0～12，无需依赖任何环境任何手机都可以使用，包括模拟器。只需几秒，即可对已安装包括未安装的APK进行脱壳。",
+        "link":"https://github.com/CodingGay/BlackDex",
+        "language":"c++",
+        "tag": "项目"
+    },
+    {
+        "title":"Youpk",
+        "cover": "http://cos.mineseb.cn/markdown/20220621173437.png",
+        "desc":"Youpk是一款针对Dex整体加固+各式各样的Dex抽取的脱壳机",
+        "link":"https://github.com/youlor/unpacker",
+        "language":"c++",
+        "tag": "项目"
+    },
+    {
+        "title":"strongR-frida-android",
+        "cover": "http://cos.mineseb.cn/markdown/20220621173637.png",
+        "desc":"跟随 FRIDA 上游自动修补程序，并为 Android 构建反检测版本的 frida-server。",
+        "link":"https://github.com/CrackerCat/strongR-frida-android",
+        "language":"c++",
+        "tag": "项目"
+    },
+    {
+        "title":"frida源代码分析--进程注入和server dbus通讯架构分析",
+        "cover": "http://cos.mineseb.cn/markdown/20220621174544.png",
+        "desc":"frdia源码，分析的没什么太大的难度，分析过程中，主要是对vala语言的一些库，和语言不是很熟悉，和对一些编程语言的高级设计理念不是很熟悉，frida本身源码写的还是很不错的，但是可能是复用性太高了，各种代码都黏在在一起，实现的功能又比较多，开始分析起来比较麻烦。我分析的是15.1.3版本。",
+        "link":"https://bbs.pediy.com/thread-270305.htm",
+        "language":"javascript",
+        "tag": "文章"
+    },
+    {
+        "title":"JavaScript、Node.js与V8的关系",
+        "cover": "http://cos.mineseb.cn/markdown/20220621174212.png",
+        "desc":"对于了解Node的开发人员，我们都知道Node是基于Chrome V8引擎开发的能使JavaScript在服务器端运行的运行时环境（runtime environment）",
+        "link":"https://segmentfault.com/a/1190000014722508",
+        "language":"javascript",
+        "tag": "文章"
+    },
+    {
+        "title":"安卓逆向-脱壳学习记录",
+        "cover": "http://cos.mineseb.cn/markdown/20220621175628.png",
+        "desc":"一个非常全面的脱壳入门和工具介绍篇",
+        "link":"https://sentrylab.cn/blog/2022/%E5%AE%89%E5%8D%93%E9%80%86%E5%90%91-%E8%84%B1%E5%A3%B3%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/",
+        "language":"html",
+        "tag": "文章"
+    },
+    {
+        "title":"爬虫逆向进阶实战",
+        "cover": "http://cos.mineseb.cn/markdown/20220621175120.png",
+        "desc":"本书以爬虫逆向方向的相关技术和岗位要求进行撰写，总结了爬虫的架构体系、主流框架和未来发展ꎮ 书中包括各种自动化工具、抓包工具、逆向工具的使用，核心内容以web,js逆向、安卓逆向、小程序逆向为主。结合三十多个实战案例进行分析，内容从易到难，循序渐进，另外还对主流的反爬虫技术进行了讲解，包括传输协议、验证码体系、字符集映射、行为和指纹等。",
+        "link":"https://u.jd.com/cKgs6o9",
+        "language":"javascript",
+        "tag": "书籍"
+    },
+    {
+        "title":"安卓Frida逆向与协议分析",
+        "cover": "http://cos.mineseb.cn/markdown/20220621175417.png",
+        "desc":"自从Frida于2014年年末问世以来，迅速在全球安全社区掀起了“Frida热潮”，借助Frida动态修改内存的特性实现了快速逆向和算法调用功能，安卓应用安全分析和对抗技术从未像如今这样成熟和自动化。",
+        "link":"https://u.jd.com/cCgQCHX",
+        "language":"javascript",
+        "tag": "书籍"
+    },
+    {
         "title":"pokepalettes",
         "cover":"http://cos.mineseb.cn/markdown/20220617004344.png",
         "desc":"一个生成pokepalettes的网站",
         "link":"https://pokepalettes.com/",
-        "language":"Html"
+        "language":"Html",
+        "tag": "项目"
     }
 ]
